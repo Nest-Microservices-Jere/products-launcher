@@ -31,9 +31,9 @@ services:
   orders-ms:
     depends_on:
       - orders-db
-    build: ./order-ms
+    build: ./orders-ms
     volumes:
-      - ./order-ms/src:/usr/src/app/src
+      - ./orders-ms/src:/usr/src/app/src
     command: npm run start:dev
     environment:
       - PORT=3002
