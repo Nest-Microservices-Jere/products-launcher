@@ -45,7 +45,7 @@ services:
     image: postgres:16.2
     restart: always
     volumes:
-      - ./order-ms/postgres:/var/lib/postgresql/data
+      - ./orders-ms/postgres:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     environment:
